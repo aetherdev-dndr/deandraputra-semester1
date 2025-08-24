@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelajaran Sekolah</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500"></body>
+
+<!-- Navbar -->
+<nav class="fixed w-full z-50 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg shadow-md">
+  <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-16">
+    <h1 class="text-2xl font-bold">Dndr.Putra</h1>
+
+    <!-- Menu Desktop -->
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="/index.html" class="hover:text-blue-500">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-500">About</a></li>
+      <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      <li><a href="/studing.html" class="hover:text-blue-500">My Studing</a></li>
+    </ul>
+
+    <div class="flex items-center space-x-4">
+      <!-- Dark Mode Button -->
+      <button id="toggleDark" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition duration-300">
+        <i id="icon-moon" class="fas fa-moon text-lg text-gray-800"></i>
+        <i id="icon-sun" class="fas fa-sun text-lg text-yellow-400 hidden"></i>
+      </button>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button id="menuBtn" class="md:hidden text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-700">
+    <ul class="flex flex-col items-center space-y-4 py-6">
+      <li><a href="/index.html" class="hover:text-blue-500">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-500">About</a></li>
+      <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      <li><a href="/studing.html" class="hover:text-blue-500">My Studing</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-animate opacity-80"></div>
+    <div class="relative z-10">
+      <img src="img/logo2.png" alt="profile" 
+           class="w-40 h-40 rounded-full border-white dark:border-gray-800 animate-bounce mb-6">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-4 text-white">Hi, I'm <span class="text-yellow-300">Deandra</span></h2>
+      <p class="text-lg md:text-xl max-w-2xl mb-8 text-gray-100">Pembelajaran Saya Kuliah Di Politeknik IDN 🚀</p>
+    </div>
+  </section>
+
+    <!-- Semester 1 -->
+    <div class="bg-gray-800 shadow-xl rounded-2xl p-6 mb-8 border-t-4 border-blue-500">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-6">Semester 1</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">Basic</button>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">Talwind</button>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">Boostrap</button>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">...</button>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">...</button>
+      </div>
+    </div>
+
+     <!-- Input WhatsApp -->
+    <section class="text-center py-16">
+        <h2 class="text-2xl font-bold mb-6">Hubungi Saya via WhatsApp</h2>
+        <input type="text" id="waNumber" placeholder="Masukkan Nomor WhatsApp" class="px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600">
+        <button onclick="openWhatsApp()" class="ml-3 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600">Hubungi</button>
+    </section>
+
+    <!-- Floating WhatsApp Icon -->
+    <button onclick="openWhatsApp()" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA" class="w-6 h-6">
+    </button>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-white dark:bg-gray-900 border-t dark:border-gray-700">
+    <p>© 2025 Deandra. Dibuat dengan ❤️ menggunakan Tailwind CSS</p>
+  </footer>
+
+
+<script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

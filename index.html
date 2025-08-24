@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Deandra</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+
+<!-- Navbar -->
+<nav class="fixed w-full z-50 bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg shadow-md">
+  <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-16">
+    <h1 class="text-2xl font-bold">Dndr.Putra</h1>
+
+    <!-- Menu Desktop -->
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-500">About</a></li>
+      <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+    </ul>
+
+    <div class="flex items-center space-x-4">
+      <!-- Dark Mode Button -->
+      <button id="toggleDark" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition duration-300">
+        <i id="icon-moon" class="fas fa-moon text-lg text-gray-800"></i>
+        <i id="icon-sun" class="fas fa-sun text-lg text-yellow-400 hidden"></i>
+      </button>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button id="menuBtn" class="md:hidden text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-700">
+    <ul class="flex flex-col items-center space-y-4 py-6">
+      <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-500">About</a></li>
+      <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-animate opacity-80"></div>
+    <div class="relative z-10">
+      <img src="img/logo2.png" alt="profile" 
+           class="w-40 h-40 rounded-full border-white dark:border-gray-800 animate-bounce mb-6">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-4 text-white">Hi, I'm <span class="text-yellow-300">Deandra</span></h2>
+      <p class="text-lg md:text-xl max-w-2xl mb-8 text-gray-100">Backend Developer | Laravel Enthusiast | Tech Explorer 🚀</p>
+      <a href="#projects" class="px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-xl shadow-lg hover:bg-yellow-300 transition transform hover:scale-105">Lihat Project Saya</a>
+    </div>
+  </section>
+
+<!-- About -->
+<section id="about" class="py-20 bg-gray-100 dark:bg-gray-800 transition fade-up">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Foto -->
+    <div class="flex justify-center">
+      <img src="img/about.jpeg" 
+           alt="Foto Deandra" 
+           class="w-72 h-72 object-cover rounded-2xl shadow-lg transform hover:scale-105 transition duration-500">
+    </div>
+
+    <!-- Deskripsi -->
+    <div class="text-center md:text-left">
+      <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        Saya seorang <span class="font-semibold">Backend Developer</span> yang berfokus pada 
+        <span class="text-blue-600 dark:text-blue-400">PHP & Laravel</span>. 
+        Saya senang membangun aplikasi dengan performa tinggi, bersih, dan mudah dikembangkan. 
+        Saat ini saya juga belajar <span class="text-green-600 dark:text-green-400">Flutter</span> untuk mobile app development.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Project Saya</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card Project -->
+        <div class="bg-white/30 dark:bg-gray-800/30 backdrop-blur-md border border-gray-200 dark:border-gray-700 shadow-lg rounded-2xl overflow-hidden transform hover:scale-105 hover:-rotate-1 transition">
+          <img src="img/project1.png" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Project 1</h3>
+            <p class="text-sm mb-4">Pembuatan web pertama saya menggunakan html dan css.</p>
+            <a href="https://aetherdev-dndr.github.io/project-tugas-html-css/" class="text-blue-500 hover:underline">Lihat Detail →</a>
+          </div>
+        </div>
+        <div class="bg-white/30 dark:bg-gray-800/30 backdrop-blur-md border border-gray-200 dark:border-gray-700 shadow-lg rounded-2xl overflow-hidden transform hover:scale-105 hover:rotate-1 transition">
+          <img src="img/project2.png" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Project 2</h3>
+            <p class="text-sm mb-4">pembuatan web kedua saya menggunakan framework talwind css.</p>
+            <a href="https://aetherdev-dndr.github.io/project-tugas-talwind/" class="text-blue-500 hover:underline">Lihat Detail →</a>
+          </div>
+        </div>
+        <div class="bg-white/30 dark:bg-gray-800/30 backdrop-blur-md border border-gray-200 dark:border-gray-700 shadow-lg rounded-2xl overflow-hidden transform hover:scale-105 hover:-rotate-1 transition">
+          <img src="https://via.placeholder.com/400x200" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Project 3</h3>
+            <p class="text-sm mb-4">Deskripsi singkat project keren yang pernah saya buat.</p>
+            <a href="#" class="text-blue-500 hover:underline">Lihat Detail →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="py-16">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 animate-fadeInUp">
+    
+    <!-- Foto Kotak -->
+    <div class="w-60 h-60 overflow-hidden rounded-2xl shadow-lg transform hover:scale-105 transition duration-500">
+      <img src="img/image.webp" alt="Foto Deandra" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Sosial Media -->
+    <div class="flex flex-col items-start space-y-6">
+      <h2 class="text-2xl font-bold">Connect with Me</h2>
+      <p class="text-gray-600 dark:text-gray-300">Temukan saya di sosial media:</p>
+      
+      <div class="flex flex-col space-y-4 text-2xl">
+        <!-- GitHub -->
+        <a href="https://github.com/deandra485" target="_blank" class="flex items-center space-x-3 hover:text-black dark:hover:text-white transition">
+          <i class="fab fa-github"></i><span class="text-base">GitHub</span>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/deandra-putra-wiguna-a39210372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="flex items-center space-x-3 hover:text-blue-600 transition">
+          <i class="fab fa-linkedin"></i><span class="text-base">LinkedIn</span>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/dndr.putra_?igsh=MW5jcmFsMnlocmRmaw==" target="_blank" class="flex items-center space-x-3 hover:text-pink-500 transition">
+          <i class="fab fa-instagram"></i><span class="text-base">Instagram</span>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+6285938682660" target="_blank" class="flex items-center space-x-3 hover:text-green-500 transition">
+          <i class="fab fa-whatsapp"></i><span class="text-base">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+    <!-- Input WhatsApp -->
+    <section class="text-center py-16">
+        <h2 class="text-2xl font-bold mb-6">Hubungi Saya via WhatsApp</h2>
+        <input type="text" id="waNumber" placeholder="Masukkan Nomor WhatsApp" class="px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600">
+        <button onclick="openWhatsApp()" class="ml-3 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600">Hubungi</button>
+    </section>
+
+    <!-- Floating WhatsApp Icon -->
+    <button onclick="openWhatsApp()" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA" class="w-6 h-6">
+    </button>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-white dark:bg-gray-900 border-t dark:border-gray-700">
+    <p>© 2025 Deandra. Dibuat dengan ❤️ menggunakan Tailwind CSS</p>
+  </footer>
+
+
+<script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
